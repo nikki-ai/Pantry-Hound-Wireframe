@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pantry Hound</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudfare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Pantry Hound</h1>
+      <nav>
+        <ul id="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#myPantry">My Pantry</a></li>
+          <li><a href="#myDiet">My Diet</a></li>
+          <li><a href="#myInfo">My Info</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class='home' id="home">
+        <h2>Home Screen</h2>
+        <label for="calories">Cal. Limit</label><br/>
+        <meter
+          id="calorie meter"
+          min="0"
+          max="100"
+          low="33"
+          high="66"
+          optimum="80"
+          value="66"
+        >
+          at 50/100</meter
+        ><br/><br/>
+        <label for="button">
+            <button class="bone">
+            <div class="c1"></div>
+            <div class="c2"></div>
+            <div class="c3"></div>
+            <div class="c4"></div>
+            <div class="b1">
+              <div class="b2">
+                Fetch me food!
+              </div>
+            </div>
+        </button></label>
+      </section>
+      <section class='myPantry' id="myPantry">
+        <h2>My Pantry</h2> 
+        <fieldset>
+          <ol label for="My Foods">
+            <li>Chocolate milk: 208</li>
+            <li>Pudding: 161</li>
+            <li>Yogurt: 220</li>
+            <li>Apple: 81</li>
+            <li>Banana: 105</li>
+            <li>Cookie: 62</li>
+            <li>Granola Bar: 125</li>
+          </ul><br/>
+          <button>Edit Pantry</button>
+        </fieldset>
+        
+      </section>
+      <section class='editPantry'>
+        <h2>Edit Pantry</h2>
+        <div class='flex'>
+         <div class='editFields'>
+            <button>Add Food</button>
+            <form>
+                <label for='food name'>Food name:</label><br/>
+                <input type='text'/><br/>
+                <label for='calorie count'>Calories per serving:</label><br/>
+                <input type='text'/>
+            </form>
+        </div>
+        <div class='editFields'>
+            <button>Delete Food</button>
+            <p>Select foods you'd like to delete</p>
+        </div>   
+        </div>
+        
+      </section>
+      <section class='myDiet' id="myDiet">
+        <h2>My Diet</h2>
+        <form>
+          <label for="height">Height:</label><br />
+          <input type="text" id="height" name="height" /><br />
+          <label for="weight">Weight:</label><br />
+          <input type="text" id="weight" name="weight" />
+        </form>
+        <p>Your BMI is:</p>
+        <button>Calculate</button>
+      </section>
+      <section class='myInfo' id="myInfo">
+        <h2>My Info</h2>
+        <img class="profilePic" src="hound.jpg" alt="profile pic" />
+        <div><p>Username: exampleuser1</p></div>
+        <button class='delete'>Delete Account</button>
+      </section>
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
